@@ -1,0 +1,56 @@
+package fr.IlannStefanovitch.Exo2;
+
+import fr.IlannStefanovitch.Exo1.Author;
+
+public class Book {
+    private String isbn;
+    private String name;
+    private fr.IlannStefanovitch.Exo2.Author author;
+    private double price;
+    private int qty = 0;
+
+    public Book(String isbn , String name, fr.IlannStefanovitch.Exo2.Author author, double price) {
+        this.name = name;
+        this.author = author;
+        this.price = price;
+
+    }
+    public Book(String isbn , String name, fr.IlannStefanovitch.Exo2.Author a1, double price, int qty) {
+    	this.isbn = isbn;
+        this.name = name;
+        this.author = a1;
+        this.price = price;
+        this.qty = qty;
+    }
+    public String getIsbn() {
+        return isbn;
+    }
+    public String getName() {
+        return name;
+    }
+    public fr.IlannStefanovitch.Exo2.Author getAuthor() {
+        return author;
+    }
+    public double getPrice() {
+        return price;
+    }
+    public void setPrice(double price) {
+        this.price = price;
+    }
+    public int getQty() {
+        return qty;
+    }
+    public void setQty(int qty) {
+        this.qty = qty;
+    }
+    public String getAuthorName() {
+        return author.toString();
+    }
+    public String toString() {
+        return "Book [name " + name + ", author " + author.toString() + ", price " + price + ", qty " + qty + "]";
+    }
+
+
+
+
+}

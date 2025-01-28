@@ -1,3 +1,4 @@
+package fr.IlannStefanovitch.Exo1;
 
 
 public class Circle {
@@ -7,11 +8,11 @@ public class Circle {
     
     public Circle() {
         radius = 1.0;
-        color = "red";
+        setColor("red");
     }
     public Circle(double r) {
         radius = r;
-        color  = "red";
+        setColor("red");
     }
     public double getRadius() {
         return radius;
@@ -25,4 +26,10 @@ public class Circle {
     public double getCircumference() {
         return 2 * Math.PI * radius;
     }
+	public String getColor() {
+		return color;
+	}
+	public void setColor(String color) {
+		this.color = color;
+	}
 }
