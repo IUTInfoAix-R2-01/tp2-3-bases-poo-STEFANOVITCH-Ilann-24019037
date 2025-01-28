@@ -3,6 +3,7 @@ package fr.IlannStefanovitch.Exo2;
 public class Exo2 {
 	public static void main (String[]args ){
 		Exo4();
+		Exo5();
 	}
 	public static void Exo4() {
         // Test Author class
