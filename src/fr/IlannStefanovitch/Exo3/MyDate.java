@@ -77,7 +77,7 @@ public class MyDate {
         this.day = day;
     }
     public String toString() {
-        return DAY[getDayOfWeek(year, month, day)] + "PPPP "+ day+" DDDDD" + MONTHS[month] + "CCCCC " + year ;
+        return DAY[getDayOfWeek(year, month, day)] +" "+ day+"  " + MONTHS[month] + "  " + year ;
 
     }
 
