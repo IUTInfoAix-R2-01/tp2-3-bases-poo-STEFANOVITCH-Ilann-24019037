@@ -9,7 +9,12 @@ public class Exo3
 {
         public static void  main (String [] args) {
             TestDate();
-        }
+            test ();
+            MyComplexApp ();
+            MyPolynomial ();
+            TestBigInteger();
+            
+            }
         public static void test () {
             MyComplex myComplex = new MyComplex(1.0,2.0);
             MyComplex myComplex3 = new MyComplex();
@@ -98,7 +103,7 @@ public class Exo3
         BigInteger i1 = new BigInteger("11111111111111111111111111111111111111111111111111111111111111");
         BigInteger i2 = new BigInteger("22222222222222222222222222222222222222222222222222");
         System.out.println(i1.add(i2));
-        System.out.println(i1.multiply(i2));
+        System.out.println(i1.multiply(i2)); 
 
     }
     public static void TestTime() {
